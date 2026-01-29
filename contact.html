@@ -157,7 +157,7 @@
     
     </div>
     
-    <div class="th-menu-wrapper">
+   <div class="th-menu-wrapper">
             <div class="th-menu-area text-center">
                 <button class="th-menu-toggle">
                     <i class="fal fa-times"></i>
@@ -178,6 +178,8 @@
                             
                         </li>
                         <li><a href="about.html">About Us</a></li>
+                        <li><a href="project.html">Our Project</a></li>
+
                         <li><a href="service.html">Services</a></li>
 
                         
@@ -238,7 +240,7 @@
                 </div>
             </div>
             <div class="sticky-wrapper">
-                <div class="menu-area" style="height: 100px;" >
+                <div class="menu-area" style="height: 117px;" >
                     <div class="container">
                         <div
                             class="row align-items-center justify-content-between"
@@ -267,14 +269,15 @@
                             <div class="col-auto">
                                 <nav class="main-menu d-none d-lg-inline-block" style="margin-bottom: 20px;">
                                     <ul>
-                                        <li
-                                            class="menu-item-has-children mega-menu-wrap"
-                                        >
-                                            <a href="home-digital-agency.html">Home</a>
-                                            
+                                        <li>
+                                            <a href="index.html">Home</a>
                                         </li>
+                                        
                                         <li>
                                             <a href="about.html">About Us</a>
+                                        </li>
+                                        <li>
+                                            <a href="project.html">Our Project</a>
                                         </li>
                                         <li>
                                             <a href="service.html">Services</a>
@@ -359,9 +362,9 @@
                   Our Office Address
                 </h4>
                 <span class="contact-info_text">
-                  Burnsville, MN 55337 Streat,
+                  609 W Johnson Ave, Cheshire,
                   <br>
-                  United States
+                  United States , Connecticut
                 </span>
               </div>
             </div>
@@ -378,11 +381,9 @@
                 </h4>
                 <span class="contact-info_text">
                   <a href="tel:+65485965789">
-                    (+65) - 48596 - 5789
+                    +1 203-805-7525
                   </a>
-                  <a href="tel:+65485965789">
-                    +65-48596-5789
-                  </a>
+                 
                 </span>
               </div>
             </div>
@@ -398,12 +399,10 @@
                   Send An Email
                 </h4>
                 <span class="contact-info_text">
-                  <a href="mailto:info.example@gmail.com">
-                    info.example@gmail.com
+                  <a href="mailto:Info@ctsofts.com">
+                    Info@ctsofts.com
                   </a>
-                  <a href="mailto:info@webteck.com">
-                    info@webteck.com
-                  </a>
+                
                 </span>
               </div>
             </div>
@@ -495,39 +494,104 @@
         </div>
       </div>
     </div>
-    <div class="map-sec">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3644.7310056272386!2d89.2286059153658!3d24.00527418490799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fe9b97badc6151%3A0x30b048c9fb2129bc!2sThemeholy!5e0!3m2!1sen!2sbd!4v1651028958211!5m2!1sen!2sbd"
-      allowfullscreen="" loading="lazy">
-      </iframe>
-    </div>
-  <footer
-            class="footer-wrapper footer-layout3"
-            data-bg-src="assets/img/bg/footer_bg_2.jpg"
-        >
-            
-            <div class="widget-area">
-            <div class="container">
-                <div class="row justify-content-between">
-                <div class="col-md-6 col-xxl-3 col-xl-4">
-                    <div class="widget footer-widget">
-                    <h3 class="widget_title">About CTsofts</h3>
-                    <div class="th-widget-about">
-                        <p class="about-text">
-                        CTsofts delivers custom software, AI-driven solutions and reliable IT services to accelerate business growth. We focus on quality, security and long-term partnerships.
-                        </p>
-                        <div class="th-social">
-                        <a href="https://www.facebook.com/profile.php?id=61570478018149"
-                            ><i class="fab fa-facebook-f"></i
-                        ></a>
-                        <a href="https://www.instagram.com/ctsofts/"
-                            ><i class="fab fa-instagram"></i
-                        ></a>
-                       
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-xl-auto">
+    
+          <style>
+/* ================= FOOTER MOBILE OVERLAP FIX ================= */
+
+/* Mobile & Small Devices */
+@media (max-width: 767px) {
+
+  /* Top shape / zig-zag hide */
+  .footer-top,
+  .logo-bg,
+  .shape-left,
+  .shape-right {
+    display: none !important;
+  }
+
+  /* Extra padding remove */
+  .footer-wrapper {
+    padding-top: 0 !important;
+  }
+
+  .footer-wrapper .widget-area {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  /* Widgets spacing */
+  .footer-wrapper .widget-area .row {
+    row-gap: 35px;
+  }
+
+  /* Recent posts responsive */
+  .footer-wrapper .recent-post {
+    display: flex;
+    gap: 12px;
+  }
+
+  .footer-wrapper .recent-post .media-img img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+  }
+
+  /* Social icons spacing */
+  .footer-wrapper .th-social {
+    margin-top: 15px;
+  }
+
+  /* Copyright center */
+  .copyright-wrap .row {
+    text-align: center;
+    row-gap: 10px;
+  }
+}
+
+/* Very small phones */
+@media (max-width: 480px) {
+  .footer-wrapper .recent-post {
+    flex-direction: column;
+  }
+
+  .footer-wrapper .recent-post .media-img img {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+
+<footer class="footer-wrapper footer-layout1">
+
+  <!-- Desktop only (auto hidden on mobile) -->
+  <div class="footer-top">
+    <div class="logo-bg"></div>
+  </div>
+
+  <div class="widget-area">
+    <div class="container">
+      <div class="row justify-content-between">
+
+        <!-- About -->
+        <div class="col-md-6 col-xxl-3 col-xl-4">
+          <div class="widget footer-widget">
+            <h3 class="widget_title">About CTsofts</h3>
+            <p class="about-text">
+              CTsofts delivers custom software, AI-driven solutions and reliable IT services to accelerate business growth. We focus on quality, security and long-term partnerships.
+            </p>
+            <div class="th-social">
+              <a href="https://www.facebook.com/profile.php?id=61570478018149">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://www.instagram.com/ctsofts/">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-md-6 col-xl-auto">
                     <div class="widget widget_nav_menu footer-widget">
                     <h3 class="widget_title">Quick Links</h3>
                     <div class="menu-all-pages-container">
@@ -577,81 +641,61 @@
                     </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-xl-auto">
-                    <div class="widget footer-widget">
-                    <h3 class="widget_title">Recent Posts</h3>
-                    <div class="recent-post-wrap">
-                        <div class="recent-post">
-                        <div class="media-img">
-                            <a href="blog-details.html"
-                            ><img
-                                src="assets/img/blog/recent-post-2-1.jpg"
-                                alt="Blog Image"
-                            /></a>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="post-title">
-                            <a
-                                class="text-inherit"
-                                href="blog-details.html"
-                                >How CTsofts Accelerates Digital Transformation</a
-                            >
-                            </h4>
-                            <div class="recent-post-meta">
-                            <a href="blog.html"
-                                ><i
-                                class="fal fa-calendar-days"
-                                ></i
-                                >12 Jan, 2026</a
-                            >
-                            </div>
-                        </div>
-                        </div>
-                        <div class="recent-post">
-                        <div class="media-img">
-                            <a href="blog-details.html"
-                            ><img
-                                src="assets/img/blog/recent-post-2-2.jpg"
-                                alt="Blog Image"
-                            /></a>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="post-title">
-                            <a
-                                class="text-inherit"
-                                href="blog-details.html"
-                                >Scaling Applications with Cloud & AI</a
-                            >
-                            </h4>
-                            <div class="recent-post-meta">
-                            <a href="blog.html"
-                                ><i
-                                class="fal fa-calendar-days"
-                                ></i
-                                >04 Feb, 2026</a
-                            >
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                </div>
+
+        <!-- Recent Posts -->
+        <div class="col-md-6 col-xl-auto">
+          <div class="widget footer-widget">
+            <h3 class="widget_title">Recent Posts</h3>
+
+            <div class="recent-post">
+              <div class="media-img">
+                <img src="assets/img/blog/recent-post-2-1.jpg" alt="">
+              </div>
+              <div>
+                <h4 class="post-title">
+                  How CTsofts Accelerates Digital Transformation
+                </h4>
+                <small>12 Jan, 2026</small>
+              </div>
             </div>
+
+            <div class="recent-post">
+              <div class="media-img">
+                <img src="assets/img/blog/recent-post-2-2.jpg" alt="">
+              </div>
+              <div>
+                <h4 class="post-title">
+                  Scaling Applications with Cloud & AI
+                </h4>
+                <small>04 Feb, 2026</small>
+              </div>
             </div>
-            <div class="copyright-wrap">
-            <div class="container">
-                <div class="row justify-content-between align-items-center">
-                <div class="col-lg-6">
-                    <p class="copyright-text">
-                        Copyright <i class="fal fa-copyright"></i> 2026 <a href="https://www.bytegensolution.com/">bytegensolution</a>. All Rights Reserved.
-                    </p>
-                </div>
-                
-                </div>
-            </div>
-            </div>
-        </footer>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="copyright-wrap bg-title">
+    <div class="container">
+      <p class="copyright-text">
+        © 2025 <a href="https://www.bytegensolution.com/">bytegensolution</a>. All Rights Reserved.
+      </p>
+    </div>
+  </div>
+
+  <!-- Desktop Shapes only -->
+  <div class="shape-left">
+    <img src="assets/img/shape/footer_shape_2.svg" alt="">
+  </div>
+  <div class="shape-right">
+    <div class="particle-1" id="particle-5"></div>
+  </div>
+
+</footer>
     <div class="scroll-top">
       <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
         <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;">

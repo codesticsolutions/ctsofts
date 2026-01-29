@@ -5032,7 +5032,7 @@ a.text-theme:hover,.text-reset:hover {
   margin-bottom:50px
 }
 .footer-widget,.footer-widget .widget {
-  padding:0;
+  padding:0px;
   border:none;
   padding-bottom:0;
   background-color:transparent;
@@ -5777,7 +5777,7 @@ a.text-theme:hover,.text-reset:hover {
 }
 @media (max-width:991px) {
   .header-layout2 .menu-area {
-  padding:10px 0
+  padding:0px 0
 }
 }.header-layout2 .main-menu>ul>li>a {
   color:var(--title-color);
